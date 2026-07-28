@@ -17,7 +17,7 @@
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Ver%20en%20Vivo-orange?style=for-the-badge&logo=github)](https://mrblour.github.io/Flutcom/)
+[![Live Demo]([https://img.shields.io/badge/🌐%20Live%20Demo-Ver%20en%20Vivo-orange?style=for-the-badge&logo=github)](https://mrblour.github.io/Flutcom/](https://mrblour.github.io/infinity-web-bautic/))
 [![Infinity Studios](https://img.shields.io/badge/Studio-Infinity%20Studios-89F336?style=for-the-badge&logo=infinity)](#)
 [![Built with Flutcom](https://img.shields.io/badge/Framework-Flutcom%20v1.0-blue?style=for-the-badge&logo=javascript)](https://github.com/Mrblour/Flutcom)
 [![Tailwind CSS v4](https://img.shields.io/badge/Styling-Tailwind%20v4-38bdf8?style=for-the-badge&logo=tailwindcss)](#)
