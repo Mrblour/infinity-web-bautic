@@ -29,7 +29,7 @@
 
 > [!TIP]
 > 🚀 **¡Explora el Live Demo en Vivo!**
-> Puedes interactuar directamente con la plataforma en línea visitando la [Demo oficial en GitHub Pages](https://mrblour.github.io/Flutcom/).
+> Puedes interactuar directamente con la plataforma en línea visitando la [Demo oficial en GitHub Pages](https://mrblour.github.io/infinity-web-bautic/).
 
 ---
 
