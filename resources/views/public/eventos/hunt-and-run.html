@@ -1,0 +1,119 @@
+<main
+  class="min-h-screen bg-transparent text-[#f5f5f7] font-sans flex flex-col items-center justify-start relative pb-20 overflow-x-hidden pt-20">
+
+  <div class="w-full" fc-component="resources/components/event-hero.html" fc-props='{"bg_image": "assets/img/Hunt%20and%20Run2.png", "tag1": "Evento", "tag2": "Minecraft", "title": "Hunt and Run", "description": "Un evento donde la supervivencia lo es todo. Únete a la cacería épica en Minecraft donde los creadores de contenido deben huir, esconderse y sobrevivir al equipo de cazadores. La estrategia, el sigilo y la velocidad son la clave para la victoria.", "main_image": "assets/img/Hunt%20and%20Run.png"}'></div>
+
+  <!-- Gallery / Info Section -->
+  <section class="relative z-10 w-full max-w-[1200px] px-8 mx-auto mt-20 animate-apple-text delay-200">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Highlight Card 1 -->
+      <div
+        class="bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl hover:border-[#89F336]/30 hover:bg-[#111] transition-all duration-300 group cursor-default">
+        <div
+          class="w-14 h-14 bg-[#89F336]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#89F336]/20 transition-all">
+          <i class="bi bi-crosshair text-2xl text-[#89F336]"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-3">Cazadores vs Presas</h3>
+        <p class="text-[#a1a1aa] text-sm leading-relaxed">Una dinámica tensa y emocionante donde cada error puede costar
+          la vida. Solo los más astutos sobrevivirán hasta el final de la partida.</p>
+      </div>
+
+      <!-- Highlight Card 2 -->
+      <div
+        class="bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl hover:border-[#89F336]/30 hover:bg-[#111] transition-all duration-300 group cursor-default">
+        <div
+          class="w-14 h-14 bg-[#89F336]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#89F336]/20 transition-all">
+          <i class="bi bi-map text-2xl text-[#89F336]"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-3">Mapa Customizado</h3>
+        <p class="text-[#a1a1aa] text-sm leading-relaxed">Un mundo inmenso creado desde cero con trampas, zonas seguras
+          y secretos diseñados específicamente para hacer la cacería perfecta.</p>
+      </div>
+
+      <!-- Highlight Card 3 -->
+      <div
+        class="bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl hover:border-[#89F336]/30 hover:bg-[#111] transition-all duration-300 group cursor-default">
+        <div
+          class="w-14 h-14 bg-[#89F336]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#89F336]/20 transition-all">
+          <i class="bi bi-controller text-2xl text-[#89F336]"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-3">Modos Inéditos</h3>
+        <p class="text-[#a1a1aa] text-sm leading-relaxed">Mecánicas de juego exclusivas desarrolladas para llevar a
+          Minecraft a su límite competitivo, ofreciendo una experiencia única al espectador.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Información Detallada del Evento -->
+  <section class="relative z-10 w-full max-w-[1200px] px-8 mx-auto mt-20 animate-apple-text delay-400">
+    <div class="flex flex-col lg:flex-row gap-12">
+      
+      <!-- Columna Izquierda: Reglas y Dinámica -->
+      <div class="flex-1 bg-[#0a0a0a] border border-white/5 p-10 rounded-3xl group hover:border-[#89F336]/30 transition-colors duration-500">
+        <h2 class="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+          <i class="bi bi-shield-check text-[#89F336]"></i> Dinámica y Reglas
+        </h2>
+        <ul class="space-y-6 text-[#a1a1aa] text-lg">
+          <li class="flex items-start gap-4">
+            <i class="bi bi-check-circle-fill text-[#89F336] mt-1 text-base"></i>
+            <span><strong class="text-white">Sin PVP entre presas:</strong> El objetivo principal es sobrevivir. La cooperación es opcional, pero atacarse entre compañeros está estrictamente prohibido.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="bi bi-check-circle-fill text-[#89F336] mt-1 text-base"></i>
+            <span><strong class="text-white">Cazadores de élite:</strong> Un equipo de profesionales con equipamiento especial rastreará a los jugadores sin descanso por todo el servidor.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="bi bi-check-circle-fill text-[#89F336] mt-1 text-base"></i>
+            <span><strong class="text-white">Zona Segura rotativa:</strong> El mapa se encogerá progresivamente, obligando a los jugadores a moverse a nuevas coordenadas cada hora para no ser eliminados por la tormenta.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Columna Derecha: Participantes y Premios -->
+      <div class="flex-1 flex flex-col gap-8">
+        
+        <!-- Premios -->
+        <div class="bg-gradient-to-br from-[#89F336]/10 to-transparent border border-[#89F336]/30 p-8 rounded-3xl relative overflow-hidden group hover:border-[#89F336]/60 transition-colors duration-500">
+          <i class="bi bi-trophy-fill absolute -right-6 -bottom-6 text-9xl text-[#89F336] opacity-10 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-700"></i>
+          <h2 class="text-2xl font-bold text-white mb-2 relative z-10">Gran Premio</h2>
+          <p class="text-5xl font-black text-[#89F336] mb-4 relative z-10 drop-shadow-[0_0_15px_rgba(137,243,54,0.3)]">$100,000 USD</p>
+          <p class="text-[#a1a1aa] text-sm relative z-10">Recompensa exclusiva para el último creador de contenido en pie tras 3 días de cacería extrema.</p>
+        </div>
+
+        <!-- Participantes Destacados -->
+        <div class="bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl flex-1 group hover:border-[#89F336]/30 transition-colors duration-500">
+          <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <i class="bi bi-people-fill text-[#89F336]"></i> Creadores Invitados
+          </h2>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-white/5 rounded-full text-sm text-[#a1a1aa] border border-white/10 hover:text-white hover:border-white/30 cursor-default transition-colors">blazei404i</span>
+            <span class="px-4 py-2 bg-white/5 rounded-full text-sm text-[#a1a1aa] border border-white/10 hover:text-white hover:border-white/30 cursor-default transition-colors">crtaby</span>
+            <span class="px-4 py-2 bg-white/5 rounded-full text-sm text-[#a1a1aa] border border-white/10 hover:text-white hover:border-white/30 cursor-default transition-colors">cosmyn</span>
+            <span class="px-4 py-2 bg-white/5 rounded-full text-sm text-[#a1a1aa] border border-white/10 hover:text-white hover:border-white/30 cursor-default transition-colors">fafita</span>
+            <span class="px-4 py-2 bg-[#89F336]/10 text-[#89F336] font-bold rounded-full text-sm border border-[#89F336]/20">+ Más Creadores</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Final -->
+  <section class="relative z-10 w-full max-w-[1200px] px-8 mx-auto mt-20 mb-10 animate-apple-text delay-300">
+    <div class="w-full rounded-3xl overflow-hidden shadow-2xl border border-white/5 relative group">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10 pointer-events-none"></div>
+      <img src="assets/img/banner5.png" alt="Hunt and Run Banner Final" class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700">
+      
+      <!-- Glassmorphism Text Box (Bottom) -->
+      <div class="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-8 bg-white/5 backdrop-blur-xl border border-white/10 p-6 md:p-8 rounded-2xl z-20 shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Información del Evento</h2>
+        <p class="text-[#f5f5f7] text-sm md:text-base leading-relaxed opacity-80">
+          Hunt and Run reunió a la élite de los creadores de contenido en una competencia sin precedentes. A lo largo de múltiples días, los participantes demostraron sus habilidades de supervivencia, alianzas secretas y estrategias de escape en un mapa hostil lleno de sorpresas y peligros inminentes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>

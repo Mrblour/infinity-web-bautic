@@ -1,0 +1,36 @@
+<main class="min-h-[calc(100vh-120px)] bg-black text-white font-sans flex flex-col items-center justify-center relative overflow-hidden">
+  
+  <!-- Subtle Green Brand Gradient Background -->
+  <div class="absolute top-0 left-1/2 w-full max-w-[1200px] h-[600px] pointer-events-none z-0 opacity-40 animate-gradient-orb transform -translate-x-1/2">
+    <div class="absolute top-[-100px] left-[30%] w-[600px] h-[600px] bg-[#89F336]/30 rounded-full blur-[120px] mix-blend-screen"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col items-center text-center px-6">
+    
+    <!-- Motion Text Intro -->
+    <h1 class="text-[5rem] md:text-[8rem] leading-none tracking-tighter mb-4 text-white animate-apple-text drop-shadow-2xl">
+      <span class="font-medium">Error</span> <span class="font-bold text-[#89F336]">404.</span>
+    </h1>
+    
+    <h2 class="text-3xl md:text-5xl font-medium tracking-tight mb-8 text-gray-200 animate-apple-text delay-200">
+      Perdidos en el<br/>infinito.
+    </h2>
+
+    <div class="text-gray-400 text-xl font-medium max-w-md mx-auto mb-14 animate-apple-text delay-300">
+      <p class="mb-4">La página que buscas no existe o ha sido movida.</p>
+      
+      <!-- Actions -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6 w-full mt-8">
+        <a href="#home" class="px-8 py-4 rounded-full bg-[#89F336] text-black text-lg font-bold hover:scale-[1.05] hover:shadow-[0_0_20px_rgba(137,243,54,0.4)] active:scale-95 transition-all no-underline">
+          Volver al Inicio
+        </a>
+        <a href="#home" class="text-white text-lg font-semibold hover:text-[#89F336] flex items-center gap-1 opacity-70 hover:opacity-100 transition-colors">
+          Reportar error <i class="bi bi-chevron-right text-[13px] mt-1 font-bold"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>window.scrollTo(0, 0);</script>
+</main>

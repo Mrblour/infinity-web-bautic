@@ -1,0 +1,71 @@
+<header class="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-4xl z-50 transition-all duration-300 rounded-full">
+  <div class="px-6 h-14 flex items-center justify-between">
+
+    <!-- Logo & Brand -->
+    <a href="#home" data-view="home"
+      class="flex items-center gap-2 text-white no-underline hover:opacity-70 transition-opacity group animate-apple-text">
+      <img src="assets/img/infinity.png" alt="Infinity Studios Logo"
+        class="w-6 h-6 object-contain opacity-90 group-hover:scale-110 transition-transform duration-300">
+      <span style="font-weight:600;font-size:0.95rem;letter-spacing:-0.02em;">Infinity Studios</span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="#home" data-view="home" class="nav-link text-[13px] tracking-wide transition-colors">Inicio</a>
+      <a href="#proyectos" data-view="proyectos"
+        class="nav-link text-[13px] tracking-wide transition-colors">Proyectos</a>
+      <a href="#nosotros" data-view="nosotros" class="nav-link text-[13px] tracking-wide transition-colors">Nosotros</a>
+      <a href="#contacto" data-view="contacto" class="nav-link text-[13px] tracking-wide transition-colors">Contacto</a>
+    </nav>
+
+    <!-- Right Actions -->
+    <div class="flex items-center gap-4">
+      <button onclick="flutcomModals.open('discord')" class="hidden md:flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#5865F2]/10 text-[#5865F2] hover:bg-[#5865F2]/20 border border-[#5865F2]/30 transition-colors font-medium text-sm">
+        <i class="bi bi-discord"></i> Discord
+      </button>
+
+      <!-- Hamburger Mobile -->
+      <button data-mobile-toggle class="md:hidden w-8 h-8 flex items-center justify-center text-white">
+        <i class="bi bi-list text-xl"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Nav (Hidden by default) -->
+  <nav id="mobile-menu" class="md:hidden hidden flex-col gap-4 px-6 pb-6 pt-2">
+    <a href="#home" data-view="home" class="mobile-link text-[15px] transition-colors w-fit">Inicio</a>
+    <a href="#proyectos" data-view="proyectos" class="mobile-link text-[15px] transition-colors w-fit">Proyectos</a>
+    <a href="#nosotros" data-view="nosotros" class="mobile-link text-[15px] transition-colors w-fit">Nosotros</a>
+    <a href="#contacto" data-view="contacto" class="mobile-link text-[15px] transition-colors w-fit">Contacto</a>
+  </nav>
+
+  <!-- Script for dynamic active states using the pill design -->
+  <script>
+    function updateActiveNav() {
+      let currentHash = window.location.hash || "#home";
+
+      const links = document.querySelectorAll('.nav-link, .mobile-link');
+
+      // The classes that make up the "pill" active indicator
+      const activeClasses = ['text-[#89F336]', 'font-bold', 'bg-[#89F336]/10', 'px-4', 'py-1.5', 'rounded-full', 'border', 'border-[#89F336]/20'];
+      const inactiveClasses = ['text-[#a1a1aa]', 'font-medium', 'hover:text-white'];
+
+      links.forEach(link => {
+        if (link.getAttribute('href') === currentHash) {
+          // Add active pill styling
+          link.classList.remove(...inactiveClasses);
+          link.classList.add(...activeClasses);
+        } else {
+          // Revert to normal inactive link
+          link.classList.remove(...activeClasses);
+          link.classList.add(...inactiveClasses);
+        }
+      });
+    }
+
+    window.addEventListener('hashchange', updateActiveNav);
+    document.addEventListener('DOMContentLoaded', updateActiveNav);
+    updateActiveNav();
+  </script>
+</header>

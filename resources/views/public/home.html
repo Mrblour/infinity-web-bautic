@@ -1,0 +1,463 @@
+<main
+  class="min-h-screen bg-transparent text-[#f5f5f7] font-sans flex flex-col items-center justify-start relative pb-20 overflow-x-hidden pt-20">
+
+  <!-- Background Banner -->
+  <div class="absolute top-0 left-0 w-full h-[90vh] z-0 pointer-events-none">
+    <img src="assets/img/baner1.png" alt="Background" class="w-full h-full object-cover object-center opacity-30">
+    <!-- Gradient overlay to fade into the black background -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-[#000000]"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section
+    class="relative z-10 w-full max-w-[1400px] px-8 mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 min-h-[80vh] mb-20">
+
+    <!-- Left Column -->
+    <div class="flex-1 text-left flex flex-col justify-center z-20 animate-apple-text">
+
+      <h1 class="text-6xl md:text-[5.5rem] font-medium mb-6 tracking-tight text-white leading-[1.05]">
+        Eventos<br>
+        <span class="text-[#89F336]">Increíbles</span>
+      </h1>
+
+      <style>
+        @keyframes float-mando {
+
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(-5px);
+          }
+        }
+
+        .animate-float-mando {
+          animation: float-mando 3s ease-in-out infinite;
+        }
+      </style>
+      <p class="text-lg text-[#a1a1aa] leading-relaxed max-w-lg mb-8">
+        <img src="assets/img/mando.png" alt="Controller"
+          class="inline-block w-[65px] h-auto object-contain align-middle mr-3 -mt-3 opacity-100 animate-float-mando drop-shadow-[0_0_10px_rgba(137,243,54,0.4)]">
+        Somos un estudio de desarrollo de videojuegos enfocado en Minecraft. Con una experiencia de más de nueve años en
+        la industria, nos especializamos en organizar, desarrollar y ejecutar eventos, series, servidores y torneos
+        competitivos.
+      </p>
+      <div class="flex items-center gap-4 mt-6">
+        <a href="#nosotros"
+          class="relative px-7 py-3 pl-14 rounded-full bg-[#89F336] text-black font-bold text-sm hover:scale-[1.03] active:scale-95 transition-all shadow-[0_0_20px_rgba(137,243,54,0.3)] flex items-center">
+
+          <!-- Avatar flotante que "sale" del botón -->
+          <img src="assets/img/user1.png" alt="Usuario"
+            class="absolute -top-5 -left-3 w-16 h-16 object-contain drop-shadow-[0_5px_10px_rgba(0,0,0,0.5)] hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+
+          Ver más sobre nosotros
+        </a>
+      </div>
+    </div>
+
+    <div class="flex-1 flex justify-center items-center relative z-10 h-full animate-apple-text delay-200">
+
+      <!-- Contenedor estático simple -->
+      <div class="relative w-80 h-80 flex justify-center items-center">
+
+        <!-- Logo con sombra verde -->
+        <div class="w-full h-full drop-shadow-[0_0_35px_rgba(137,243,54,0.6)]" style="background-color: #89F336;
+                    -webkit-mask-image: url('assets/img/infinity-icon.svg');
+                    -webkit-mask-size: contain;
+                    -webkit-mask-repeat: no-repeat;
+                    -webkit-mask-position: center;
+                    mask-image: url('assets/img/infinity-icon.svg');
+                    mask-size: contain;
+                    mask-repeat: no-repeat;
+                    mask-position: center;">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="flex-1 flex flex-col justify-center items-start lg:items-end gap-4 z-20 animate-apple-text delay-300">
+      <div
+        class="font-mono text-xs md:text-sm font-bold tracking-[0.2em] bg-[#89F336] text-black px-4 py-2 rounded-sm uppercase w-fit shadow-[0_0_15px_rgba(137,243,54,0.2)]">
+        CREADORES DE CONTENIDO
+      </div>
+      <div class="font-mono text-xs md:text-sm font-bold tracking-[0.2em] text-white uppercase px-2 py-1 w-fit">
+        PARA CREADORES
+      </div>
+      <div
+        class="font-mono text-xs md:text-sm font-bold tracking-[0.2em] bg-[#89F336] text-black px-4 py-2 rounded-sm uppercase w-fit shadow-[0_0_15px_rgba(137,243,54,0.2)]">
+        DE CONTENIDO
+      </div>
+    </div>
+  </section>
+
+  <!-- Filmstrip Marquee Section -->
+  <section
+    class="relative z-20 w-full py-16 bg-[#89F336] transform -skew-y-2 mb-32 shadow-[0_0_40px_rgba(137,243,54,0.15)] border-y-[8px] border-black overflow-hidden flex items-center">
+    <div class="absolute inset-0 bg-black/5 opacity-50 mix-blend-overlay"></div>
+    <div class="flex gap-4 animate-marquee transform skew-y-2 py-4 px-4 items-center">
+      <!-- We duplicate items so it scrolls smoothly -->
+      <div class="flex gap-4 items-center">
+        <!-- 6 banner images -->
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/baner1.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/banner5.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/fondo2.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/fondo3.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/Hunt%20and%20Run2.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/squid_craft.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+      </div>
+      <!-- Duplicate for infinite scroll loop -->
+      <div class="flex gap-4 items-center">
+        <!-- 6 banner images (duplicate) -->
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/baner1.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/banner5.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/fondo2.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/fondo3.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/Hunt%20and%20Run2.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+        <div
+          class="w-72 h-44 rounded border-4 border-[#89F336] flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer shadow-xl overflow-hidden">
+          <img src="assets/img/squid_craft.png" alt="Banner" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unified Projects & News Carousel -->
+  <section id="proyectos" class="relative z-10 w-full max-w-[1200px] px-8 mx-auto mb-32">
+    <div class="mb-10 text-left">
+      <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">Proyectos y <span
+          class="text-[#89F336]">Novedades</span>.</h2>
+      <p class="text-gray-400">Todo lo que estamos haciendo y lo último que ha pasado.</p>
+    </div>
+
+    <div
+      class="flutcom-carousel relative w-full aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+      <div class="carousel-inner relative w-full h-full flex transition-transform duration-700 ease-in-out">
+
+        <!-- Slide 1: Project 1 -->
+        <div class="carousel-item w-full h-full flex-shrink-0 relative">
+          <img src="assets/img/squid_craft.png" alt="Squid Craft Games 3" class="w-full h-full object-cover">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 md:p-16">
+            <div
+              class="max-w-4xl border-l-4 border-[#89F336] pl-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="inline-block px-3 py-1 bg-[#89F336] text-black text-xs font-bold rounded-full mb-3 uppercase tracking-wider shadow-[0_0_15px_rgba(137,243,54,0.4)]">Proyecto
+                Principal</span>
+              <h3 class="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">Squid Craft Games 3</h3>
+              <p class="text-gray-200 md:text-lg line-clamp-3 md:line-clamp-none max-w-3xl drop-shadow-md">
+                La tercera edición de los Squid Craft Games tuvo lugar en 2024 con 200 creadores de contenido,
+                incluyendo
+                jugadores angloparlantes e hispanohablantes. Ambientada en la Antártida. Organizado por Rubius,
+                Auronplay, Komanche y Twitch Rivals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: News 1 -->
+        <div class="carousel-item w-full h-full flex-shrink-0 relative">
+          <img src="assets/img/baner1.png" alt="News" class="w-full h-full object-cover">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 md:p-16">
+            <div
+              class="max-w-4xl border-l-4 border-[#89F336] pl-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="inline-block px-3 py-1 bg-white/20 text-white backdrop-blur border border-white/20 text-xs font-bold rounded-full mb-3 uppercase tracking-wider">Actualización</span>
+              <h3 class="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">Nuevo motor de eventos
+                implementado</h3>
+              <p class="text-gray-200 md:text-lg max-w-3xl drop-shadow-md">
+                Mejoramos el rendimiento de los servidores para soportar hasta 300 jugadores concurrentes sin lag.
+                Nuestra infraestructura ahora es capaz de escalar automáticamente según la demanda en tiempo real.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: News 2 -->
+        <div class="carousel-item w-full h-full flex-shrink-0 relative">
+          <img src="assets/img/fondo2.png" alt="News" class="w-full h-full object-cover">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 md:p-16">
+            <div
+              class="max-w-4xl border-l-4 border-[#89F336] pl-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="inline-block px-3 py-1 bg-[#89F336] text-black text-xs font-bold rounded-full mb-3 uppercase tracking-wider shadow-[0_0_15px_rgba(137,243,54,0.4)]">Evento</span>
+              <h3 class="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">Resumen: Hunt & Run Final</h3>
+              <p class="text-gray-200 md:text-lg max-w-3xl drop-shadow-md">
+                Una mirada atrás a las mejores jugadas y momentos de tensión del último torneo extremo.
+                Revive la emoción y descubre quién se llevó la corona en la persecución más épica del año.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: News 3 -->
+        <div class="carousel-item w-full h-full flex-shrink-0 relative">
+          <img src="assets/img/fondo3.png" alt="News" class="w-full h-full object-cover">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 md:p-16">
+            <div
+              class="max-w-4xl border-l-4 border-[#89F336] pl-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="inline-block px-3 py-1 bg-white/20 text-white backdrop-blur border border-white/20 text-xs font-bold rounded-full mb-3 uppercase tracking-wider">Desarrollo</span>
+              <h3 class="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">Creando mapas procedurales</h3>
+              <p class="text-gray-200 md:text-lg max-w-3xl drop-shadow-md">
+                Descubre cómo nuestro equipo de builders y desarrolladores colaboran para generar terrenos únicos.
+                Aplicando nuevos algoritmos para mundos infinitos y detallados en cada partida.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls Overlay -->
+      <button
+        class="carousel-prev absolute top-1/2 left-4 md:left-8 -translate-y-1/2 w-12 h-12 rounded-full bg-black/40 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-[#89F336] hover:text-black hover:border-[#89F336] transition-all opacity-0 group-hover:opacity-100">
+        <i class="bi bi-chevron-left text-xl"></i>
+      </button>
+      <button
+        class="carousel-next absolute top-1/2 right-4 md:right-8 -translate-y-1/2 w-12 h-12 rounded-full bg-black/40 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-[#89F336] hover:text-black hover:border-[#89F336] transition-all opacity-0 group-hover:opacity-100">
+        <i class="bi bi-chevron-right text-xl"></i>
+      </button>
+
+      <!-- Dots Overlay -->
+      <div class="carousel-dots absolute bottom-6 right-8 flex gap-3 z-20">
+        <!-- JS generará los botones aquí -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Componentes Reutilizables con Fondo de Patrones -->
+  <section class="relative w-full py-20 mt-10 mb-20 overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 z-0 opacity-15 pointer-events-none mix-blend-screen"
+      style="background-image: url('assets/img/fondo2.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    </div>
+
+    <!-- Overlays to blend with the main black background -->
+    <div class="absolute inset-0 z-0 bg-gradient-to-b from-[#000000] via-black/40 to-[#000000] pointer-events-none">
+    </div>
+    <div class="absolute inset-0 z-0 bg-[#89F336]/5 pointer-events-none"></div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 w-full flex flex-col items-center">
+      <div class="w-full" fc-component="resources/components/plataformas.html"></div>
+      <div class="w-full -mt-10" fc-component="resources/components/creadores.html"></div>
+    </div>
+  </section>
+
+  <!-- Nuevas Secciones Agregadas -->
+  
+  <!-- Características -->
+  <div class="w-full relative z-10" fc-component="resources/components/features.html"></div>
+
+  <!-- Roadmap -->
+  <div class="w-full relative z-10" fc-component="resources/components/roadmap.html"></div>
+
+  <!-- Testimonios (Estadísticas movidas a Características) -->
+  <div class="w-full relative z-10 bg-gradient-to-b from-transparent via-white/5 to-transparent pt-20">
+
+
+    <!-- Testimonios -->
+    <section class="relative w-full max-w-[1200px] px-8 mx-auto pb-20">
+      <div class="mb-12 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">Lo que dicen <span
+            class="text-[#89F336]">de nosotros</span>.</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Testimonial 1 -->
+        <div
+          class="bg-gradient-to-br from-white/10 to-transparent p-8 rounded-3xl border border-white/10 relative overflow-hidden group hover:border-[#89F336]/30 transition-all">
+          <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+            <i class="bi bi-quote text-6xl text-[#89F336]"></i>
+          </div>
+          <p class="text-gray-300 relative z-10 mb-8 italic">"El mejor evento de Minecraft en el que he participado. La
+            organización y el nivel técnico de Infinity es de otro planeta."</p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-gray-700 overflow-hidden">
+              <img src="assets/img/user1.png" alt="Creador" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="text-white font-bold">Creador 1</h4>
+              <p class="text-[#89F336] text-sm">Twitch Partner</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div
+          class="bg-gradient-to-br from-white/10 to-transparent p-8 rounded-3xl border border-white/10 relative overflow-hidden group hover:border-[#89F336]/30 transition-all">
+          <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+            <i class="bi bi-quote text-6xl text-[#89F336]"></i>
+          </div>
+          <p class="text-gray-300 relative z-10 mb-8 italic">"Trabajar con Infinity Studio nos dio la tranquilidad de
+            que el torneo iba a salir perfecto. ¡Y así fue!"</p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-gray-700 overflow-hidden">
+              <img src="assets/img/user2.png" alt="Creador" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="text-white font-bold">Creador 2</h4>
+              <p class="text-[#89F336] text-sm">YouTuber</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div
+          class="bg-gradient-to-br from-white/10 to-transparent p-8 rounded-3xl border border-white/10 relative overflow-hidden group hover:border-[#89F336]/30 transition-all">
+          <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+            <i class="bi bi-quote text-6xl text-[#89F336]"></i>
+          </div>
+          <p class="text-gray-300 relative z-10 mb-8 italic">"Innovación en cada serie. Siempre sorprenden con las
+            mecánicas y los mapas que construyen."</p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-gray-700 overflow-hidden">
+              <img src="assets/img/user3.png" alt="Creador" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="text-white font-bold">Creador 3</h4>
+              <p class="text-[#89F336] text-sm">Pro Player</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <!-- Equipo -->
+  <div class="w-full relative z-10 bg-gradient-to-b from-transparent to-black">
+    <section class="relative w-full max-w-[1200px] px-8 mx-auto py-20 border-t border-white/5">
+      <div class="mb-12 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">El <span
+            class="text-[#89F336]">Equipo</span>.</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">Las mentes maestras detrás del código, los bloques y la logística.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Member 1 -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden border-4 border-white/10 group-hover:border-[#89F336] transition-all mb-4 relative">
+            <img src="assets/img/user1.png" alt="Dev"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+          </div>
+          <h4 class="text-white font-bold text-lg">Developer 1</h4>
+          <p class="text-[#89F336] text-sm">Lead Programmer</p>
+        </div>
+        <!-- Member 2 -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden border-4 border-white/10 group-hover:border-[#89F336] transition-all mb-4 relative">
+            <img src="assets/img/user2.png" alt="Dev"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+          </div>
+          <h4 class="text-white font-bold text-lg">Builder 1</h4>
+          <p class="text-[#89F336] text-sm">Lead Builder</p>
+        </div>
+        <!-- Member 3 -->
+        <div class="flex flex-col items-center group">
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden border-4 border-white/10 group-hover:border-[#89F336] transition-all mb-4 relative">
+            <img src="assets/img/user3.png" alt="Dev"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+          </div>
+          <h4 class="text-white font-bold text-lg">Admin 1</h4>
+          <p class="text-[#89F336] text-sm">Project Manager</p>
+        </div>
+        <!-- Member 4 -->
+        <a href="#" class="flex flex-col items-center group">
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden border-4 border-white/10 group-hover:border-[#89F336] transition-all mb-4 relative bg-white/5 flex items-center justify-center text-gray-500 group-hover:text-[#89F336]">
+            <i class="bi bi-plus-lg text-4xl"></i>
+          </div>
+          <h4 class="text-white font-bold text-lg group-hover:text-[#89F336] transition-colors">Únete a nosotros</h4>
+          <p class="text-gray-500 text-sm">Buscamos talento</p>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- CTA -->
+  <section class="relative w-full px-4 md:px-8 py-20 mb-10 mt-10">
+    <div
+      class="max-w-[1000px] mx-auto bg-gradient-to-br from-black/80 to-[#89F336]/10 border border-[#89F336]/30 rounded-[2rem] p-10 md:p-16 text-center relative overflow-hidden backdrop-blur-md shadow-[0_0_50px_rgba(137,243,54,0.1)]">
+      <!-- Elementos decorativos de fondo -->
+      <div
+        class="absolute top-0 right-0 w-64 h-64 bg-[#89F336] opacity-10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2">
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-64 h-64 bg-[#89F336] opacity-10 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2">
+      </div>
+
+      <div class="relative z-10 flex flex-col items-center">
+        <div class="w-20 h-20 mb-6 drop-shadow-[0_0_15px_rgba(137,243,54,0.6)]" style="background-color: #89F336;
+                    -webkit-mask-image: url('assets/img/infinity-icon.svg');
+                    -webkit-mask-size: contain;
+                    -webkit-mask-repeat: no-repeat;
+                    -webkit-mask-position: center;
+                    mask-image: url('assets/img/infinity-icon.svg');
+                    mask-size: contain;
+                    mask-repeat: no-repeat;
+                    mask-position: center;">
+        </div>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6 leading-tight">
+          Lleva tu evento al <br /><span class="text-[#89F336]">siguiente nivel</span>.
+        </h2>
+        <p class="text-gray-300 text-lg mb-10 max-w-xl mx-auto">
+          ¿Tienes una idea para un torneo o serie? Nosotros nos encargamos del desarrollo, los servidores y la
+          logística. Hablemos.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contacto"
+            class="px-8 py-4 rounded-full bg-[#89F336] text-black font-bold text-lg hover:scale-[1.05] active:scale-95 transition-all shadow-[0_0_25px_rgba(137,243,54,0.4)]">
+            Contactar con nosotros
+          </a>
+          <a href="#proyectos"
+            class="px-8 py-4 rounded-full bg-white/5 border border-white/20 text-white font-bold text-lg hover:bg-white/10 transition-colors">
+            Ver nuestro portafolio
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

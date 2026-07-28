@@ -1,0 +1,93 @@
+<main
+  class="min-h-screen bg-transparent text-[#f5f5f7] font-sans flex flex-col items-center justify-start relative pb-20 overflow-x-hidden pt-20">
+
+  <!-- Background Banner -->
+  <div class="absolute top-0 left-0 w-full h-[60vh] z-0 pointer-events-none">
+    <div class="absolute inset-0 bg-[#89F336]/10 opacity-30"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/80 to-[#000000]"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative z-10 w-full max-w-[1400px] px-8 mx-auto flex flex-col items-center justify-center min-h-[40vh] mb-12 text-center animate-apple-text">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-white leading-tight">
+      Ponte en <span class="text-[#89F336]">Contacto</span>
+    </h1>
+    <p class="text-lg text-[#a1a1aa] leading-relaxed max-w-2xl">
+      ¿Tienes un proyecto en mente o quieres colaborar con nosotros? Nos encantaría escucharte.
+    </p>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="relative z-10 w-full max-w-[1200px] px-8 mx-auto mb-32">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      
+      <!-- Contact Info -->
+      <div class="flex flex-col justify-center">
+        <h2 class="text-3xl font-bold text-white mb-8">Información de Contacto</h2>
+        
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center gap-6 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-[#89F336]/30 transition-colors">
+            <div class="w-14 h-14 rounded-full bg-[#89F336]/20 flex items-center justify-center text-[#89F336]">
+              <i class="bi bi-envelope-fill text-2xl"></i>
+            </div>
+            <div>
+              <p class="text-sm text-[#a1a1aa] uppercase tracking-wider mb-1">Email</p>
+              <a href="mailto:hola@infinitystudios.com" class="text-lg font-bold text-white hover:text-[#89F336] transition-colors">hola@infinitystudios.com</a>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-6 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-[#89F336]/30 transition-colors">
+            <div class="w-14 h-14 rounded-full bg-[#89F336]/20 flex items-center justify-center text-[#89F336]">
+              <i class="bi bi-discord text-2xl"></i>
+            </div>
+            <div>
+              <p class="text-sm text-[#a1a1aa] uppercase tracking-wider mb-1">Discord</p>
+              <button onclick="flutcomModals.open('discord')" class="text-lg font-bold text-white hover:text-[#89F336] transition-colors text-left cursor-pointer">Únete a nuestro servidor</button>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-6 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-[#89F336]/30 transition-colors">
+            <div class="w-14 h-14 rounded-full bg-[#89F336]/20 flex items-center justify-center text-[#89F336]">
+              <i class="bi bi-twitter-x text-2xl"></i>
+            </div>
+            <div>
+              <p class="text-sm text-[#a1a1aa] uppercase tracking-wider mb-1">Twitter / X</p>
+              <button onclick="flutcomModals.open('muy-pronto')" class="text-lg font-bold text-white hover:text-[#89F336] transition-colors text-left cursor-pointer">@InfinityStudios</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-[#0a0a0a] p-8 md:p-10 rounded-3xl border border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+        <h3 class="text-2xl font-bold text-white mb-6">Envíanos un mensaje</h3>
+        <form action="#" method="POST" class="flex flex-col gap-5">
+          <div class="flex flex-col gap-2">
+            <label for="name" class="text-sm font-medium text-[#a1a1aa]">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" 
+                   class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-[#89F336] focus:ring-1 focus:ring-[#89F336] transition-all">
+          </div>
+          
+          <div class="flex flex-col gap-2">
+            <label for="email" class="text-sm font-medium text-[#a1a1aa]">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" 
+                   class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-[#89F336] focus:ring-1 focus:ring-[#89F336] transition-all">
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="message" class="text-sm font-medium text-[#a1a1aa]">Mensaje</label>
+            <textarea id="message" name="message" rows="4" placeholder="¿En qué te podemos ayudar?" 
+                      class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-[#89F336] focus:ring-1 focus:ring-[#89F336] transition-all resize-none"></textarea>
+          </div>
+
+          <button type="submit" 
+                  class="mt-4 w-full bg-[#89F336] text-black font-bold py-4 rounded-xl hover:bg-[#7AE025] hover:scale-[1.02] active:scale-95 transition-all shadow-[0_0_20px_rgba(137,243,54,0.3)]">
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+      
+    </div>
+  </section>
+
+</main>
