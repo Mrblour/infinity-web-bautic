@@ -1,42 +1,79 @@
 <p align="center">
-  <img src="assets/img/infinity.png" alt="Infinity Studios Logo" width="120" />
+  <a href="https://mrblour.github.io/Flutcom/" target="_blank">
+    <img src="assets/img/baner1.png" alt="Infinity Studios Banner" width="100%" style="border-radius: 12px;" />
+  </a>
 </p>
 
-# Infinity Studios
+<h1 align="center">
+  🌐 Infinity Studios
+</h1>
 
 <p align="center">
-  <strong>Sitio Web Oficial & Plataforma Web Interactiva de Infinity Studios</strong>
+  <strong>Sitio Web Oficial & Plataforma Interactiva de Infinity Studios</strong>
   <br/>
-  Construido con el micro-framework <strong>Flutcom SPA</strong> para una experiencia ultrarrápida, fluida y sin recargas de página.
+  Construido con el motor <strong>Flutcom SPA Micro-Framework</strong> para una experiencia ultrarrápida, fluida y sin recargas de página.
   <br/><br/>
 </p>
 
 <div align="center">
 
-[![Infinity Studios](https://img.shields.io/badge/Studio-Infinity%20Studios-89F336.svg)](#)
-[![Built with Flutcom](https://img.shields.io/badge/Framework-Flutcom%20v1.0-blue.svg)](https://github.com/Mrblour/Flutcom)
-[![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20v4-38bdf8.svg)](#)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Ver%20en%20Vivo-orange?style=for-the-badge&logo=github)](https://mrblour.github.io/Flutcom/)
+[![Infinity Studios](https://img.shields.io/badge/Studio-Infinity%20Studios-89F336?style=for-the-badge&logo=infinity)](#)
+[![Built with Flutcom](https://img.shields.io/badge/Framework-Flutcom%20v1.0-blue?style=for-the-badge&logo=javascript)](https://github.com/Mrblour/Flutcom)
+[![Tailwind CSS v4](https://img.shields.io/badge/Styling-Tailwind%20v4-38bdf8?style=for-the-badge&logo=tailwindcss)](#)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#)
 
 </div>
 
 ---
 
-## 🚀 Sobre el Proyecto
+> [!TIP]
+> 🚀 **¡Explora el Live Demo en Vivo!**
+> Puedes interactuar directamente con la plataforma en línea visitando la [Demo oficial en GitHub Pages](https://mrblour.github.io/Flutcom/).
 
-Este repositorio contiene la plataforma web de **Infinity Studios**, diseñada para dar a conocer nuestros proyectos, eventos de contenido (como *Hunt and Run*, *Squid Craft Games*), novedades y enlaces a la comunidad.
+---
 
-La aplicación está desarrollada utilizando **Flutcom**, un micro-framework SPA (Single Page Application) moderno y ligero basado en JavaScript vainilla. Esto garantiza una velocidad de carga máxima, cero consumo innecesario de recursos y transiciones instantáneas.
+## 🌟 Sobre Infinity Studios & Tecnología Flutcom
+
+**Infinity Studios** es una agencia creativa y plataforma digital enfocada en la creación de experiencias web, eventos masivos para creadores de contenido (como *Hunt and Run* y *Squid Craft Games*) y producciones digitales.
+
+Para garantizar el máximo rendimiento y una experiencia de usuario instantánea, esta web está impulsada por **Flutcom**, un micro-framework SPA (Single Page Application) moderno basado en JavaScript nativo:
+
+* **Sin recarga de página**: Navegación fluida por hash routing administrada por el motor `Flutcom`.
+* **Cero librerías pesadas**: Diseñado para cargar en milisegundos con rendimiento 100/100.
+* **Componentes Modulares**: Separación limpia entre vistas, parciales y componentes dinámicos.
+
+---
+
+## 📸 Galería & Vista Previa Visual
+
+<table align="center">
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/img/squid_craft.png" alt="Squid Craft Games" width="100%" style="border-radius: 8px;" />
+      <br />
+      <sub><b>Eventos & Proyectos</b></sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/img/Hunt and Run.png" alt="Hunt and Run Event" width="100%" style="border-radius: 8px;" />
+      <br />
+      <sub><b>Experiencias Interactivas</b></sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## ✨ Características Principales
 
-- **Navegación SPA Instantánea**: Sistema de ruteo por hash administrado por el motor `Flutcom` sin recargas de navegador.
-- **Diseño Premium & Modo Oscuro**: Estética moderna con efectos glassmorphism, microanimaciones y tipografía cuidada.
-- **Micro-Framework Flutcom**: Configuración centralizada de rutas, componentes y plugins desde `flutcom.config.js`.
-- **Integración con Tailwind CSS v4**: Compilación optimizada en tiempo real para estilos altamente personalizables.
-- **Sistema Modular de Componentes y Modales**: Vistas divididas en parciales (Navbar, Footer), componentes (Roadmap, Creadores, Features) y modales de interacción (Comunidad Discord).
+| Característica | Descripción |
+| :--- | :--- |
+| ⚡ **Motor SPA Flutcom** | Sistema de ruteo cliente ultrarrápido sin peticiones pesadas al servidor en cada cambio de vista. |
+| 🎨 **Estilo Premium & Dark Mode** | Interfaz moderna con efectos de cristal (*glassmorphic UI*), degradados fluidos y acentos en verde neón (`#89F336`). |
+| 🧩 **Arquitectura Modular HTML** | Estructura organizada en `views/`, `partials/` (Header, Footer) y `components/` (Roadmap, Creadores, Features). |
+| 💨 **Tailwind CSS v4 Integration** | Compilación automatizada en tiempo real mediante `npm run dev`. |
+| 📱 **100% Responsive & Adaptable** | Adaptado a dispositivos móviles, tablets y monitores de alta resolución con menú lateral fluido. |
+| 💬 **Sistema de Modales Interactivos** | Integración nativa de modales dinámicos como el cuadro de diálogo de la comunidad de **Discord**. |
 
 ---
 
@@ -44,79 +81,69 @@ La aplicación está desarrollada utilizando **Flutcom**, un micro-framework SPA
 
 ```text
 infinity/
-├── assets/                    # Archivos estáticos
-│   ├── css/                   # Estilos CSS personalizados (style.css, flutcom.css)
-│   ├── img/                   # Assets gráficos, imágenes de eventos y logos
-│   └── vendor/tailwind/       # CSS procesado por Tailwind v4
-├── flutcom/                   # Motor core del framework Flutcom (Routing & Lifecycle)
-├── plugins/                   # Plugins interactivos (Modales, Menú Móvil, Carrusel, etc.)
-├── resources/                 # Vistas y componentes HTML
-│   ├── components/            # Componentes reutilizables (Roadmap, Creadores, etc.)
-│   ├── partials/              # Cabecera (Header) y Pie de página (Footer)
-│   └── views/                 # Páginas de la aplicación (Home, Proyectos, Nosotros, etc.)
-├── run/                       # Entorno de desarrollo local (run/dev.js)
-├── src/                       # Archivos de entrada para Tailwind CSS (input.css)
-├── flutcom.config.js          # Configuración principal de rutas, metadatos y plugins
-├── index.html                 # Punto de entrada HTML principal (App Shell)
-└── package.json               # Dependencias del proyecto y scripts de desarrollo
+├── 📁 assets/                    # Archivos estáticos del sitio
+│   ├── 📁 css/                   # Estilos personalizados (style.css, flutcom.css)
+│   ├── 📁 img/                   # Logos, banners de eventos y capturas
+│   └── 📁 vendor/tailwind/       # Estilos compilados de Tailwind CSS v4
+├── 📁 flutcom/                   # Motor Core de ruteo y ciclo de vida de Flutcom
+├── 📁 plugins/                   # Módulos interactivos (Modales, Menú Móvil, Carrusel)
+├── 📁 resources/                 # Componentes y Vistas HTML
+│   ├── 📁 components/            # Componentes reutilizables (Roadmap, Creadores)
+│   ├── 📁 partials/              # Cabecera (Header) y Pie de página (Footer)
+│   └── 📁 views/                 # Páginas principales (Home, Proyectos, Nosotros, Games)
+├── 📁 run/                       # Scripts de ejecución del entorno local (dev.js)
+├── 📁 src/                       # Entrada de Tailwind CSS (input.css)
+├── 📄 flutcom.config.js          # Configuración principal de rutas, plugins y metadatos
+├── 📄 index.html                 # Punto de entrada HTML principal (App Shell)
+└── 📄 package.json               # Configuración de dependencias y scripts npm
 ```
 
 ---
 
-## 🛠️ Requisitos Previos
+## 🛠️ Requisitos e Instalación
 
-Antes de comenzar, asegúrate de tener instalado:
+### Requisitos Previos
 
-- **Node.js** (Versión 18 o superior recomendada): [Descargar Node.js](https://nodejs.org)
+Asegúrate de contar con **Node.js** (v18 o superior) instalado en tu equipo:
+- [Descargar Node.js LTS](https://nodejs.org)
 
-Puedes verificar si Node.js está instalado ejecutando:
+Verifica la instalación en tu terminal:
 ```bash
 node -v
 npm -v
 ```
 
----
+### Guía de Inicio Rápido
 
-## 💻 Instalación y Uso
-
-1. **Clonar el repositorio**:
+1. **Clona el repositorio**:
    ```bash
    git clone https://github.com/TU_USUARIO/infinity.git
    cd infinity
    ```
 
-2. **Instalar dependencias**:
+2. **Instala las dependencias**:
    ```bash
    npm install
    ```
 
-3. **Iniciar el servidor de desarrollo**:
+3. **Inicia el servidor de desarrollo local**:
    ```bash
    npm run dev
    ```
-   *Este comando iniciará el servidor local en `http://localhost:3000` y compilará Tailwind CSS automáticamente en modo watch.*
+   > 💡 *El servidor iniciará en `http://localhost:3000` compilando Tailwind CSS automáticamente.*
 
 ---
 
-## 🛠️ Comandos Disponibles
+## ⚡ Enrutamiento y Configuración de Rutas
 
-| Comando | Descripción |
-| ------- | ----------- |
-| `npm run dev` | Inicia el servidor de desarrollo y el compilador de Tailwind CSS en paralelo. |
-| `npm run serve` | Sirve la carpeta raíz de forma estática en el puerto 3000. |
-| `npm run watch:css` | Compila Tailwind CSS de forma independiente en modo watch. |
-
----
-
-## ⚡ Enrutamiento y Configuración
-
-Toda la estructura de la aplicación se gestiona desde `flutcom.config.js`:
+Todas las rutas y metadatos del sitio se gestionan centralizadamente en `flutcom.config.js`:
 
 ```javascript
 export const site = {
   nombre: "Infinity Studios",
   autor: "Infinity Studios",
   version: "1.0.0",
+  defaultView: "home",
 };
 
 export const routes = {
@@ -131,7 +158,8 @@ export const routes = {
 
 ---
 
-## 📄 Licencia y Créditos
+## 📜 Licencia & Créditos
 
 - **Proyecto**: © **Infinity Studios** — Todos los derechos reservados.
-- **Framework**: Creado utilizando el motor **Flutcom SPA Micro-Framework**.
+- **Framework Core**: Creado utilizando el motor **Flutcom SPA Micro-Framework**.
+
